@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="child">
+        <!-- The Titile Form -->
+        <h3>Contact Us <span>*</span></h3>
+        <!-- Start Form -->
+        <form action="">
+          <!-- Div User Name -->
+          <div class="parent">
+            <!-- first Name -->
+            <div>
+              <label for="first">First Name <span>*</span></label>
+              <input id="first" type="text" />
+              <p>This field is required</p>
+            </div>
+            <!-- Last Name -->
+            <div>
+              <label for="last">Last Name <span>*</span></label>
+              <input id="last" type="text" />
+              <p>This field is required</p>
+            </div>
+          </div>
+          <!-- Email -->
+          <div class="parente">
+            <div>
+              <label for="emi">Email Address <span>*</span></label>
+              <input id="emi" type="text" />
+              <p>Please enter a valid email address</p>
+            </div>
+          </div>
+          <!-- Cheek Box -->
+          <div class="parentCheek">
+            <label for="">Qury Type <span>*</span> </label>
+            <div class="childParent">
+              <div class="cheek" data-radio="radio1">
+                <label for="radio1">
+                  <input id="radio1" type="radio" name="rad" />
+                  Genarel Enquiry <span>*</span>
+                </label>
+              </div>
+              <div class="cheek" data-radio="radio2">
+                <label for="radio2">
+                  <input id="radio2" type="radio" name="rad" />
+                  Support Request <span>*</span>
+                </label>
+              </div>
+            </div>
+            <p>Please select a query type</p>
+          </div>
+          <!-- Messge -->
+          <div class="parent-message">
+            <label for="message">Message <span>*</span></label>
+            <input id="message" type="text" />
+            <p>This field is required</p>
+          </div>
+          <div class="parent-Cheek">
+            <input id="Chek" type="checkbox" />
+            <label for="Chek"
+              >I content to being contacted by the team <span>*</span></label
+            >
+          </div>
+          <p>To submit this form, please consent to being contacted</p>
+          <!-- Submit -->
+          <div class="parentSubmit">
+            <input type="submit" value="submit" />
+          </div>
+        </form>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
