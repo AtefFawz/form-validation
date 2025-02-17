@@ -93,6 +93,7 @@ label {
   height: 150px;
   display: grid;
   grid-template-columns: 1fr;
+  padding: 0px 5px;
 }
 @media (min-width: 768px) {
   #message {
@@ -115,6 +116,7 @@ span{
   margin-left: 10px;
   margin: 10px 0;
 }
+
 #Chek{
   accent-color: #0c7d69;
 }
