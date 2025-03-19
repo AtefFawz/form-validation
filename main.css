@@ -11,7 +11,7 @@ body {
   justify-content: center;
   align-items: center;
   font-family: Arial, Helvetica, sans-serif;
-  padding: 8px;
+  padding: 10px;
 }
 .container {
   max-width: 60%;
@@ -36,7 +36,7 @@ input {
   border-radius: 6px;
   outline: none;
   border: none;
-  border: 1px solid #aaa;
+  border: 1.5px solid #aaa;
   margin: 8px 0;
 }
 label {
@@ -131,7 +131,10 @@ input[type="radio"] {
   cursor: pointer;
 }
 .active {
-  border-color: #0c7d69;
+  /* border-color: #0c7d69; */
+  animation-name: ainmationDorder;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
 }
 .Active {
   border-color: #0c7d69;
@@ -143,7 +146,39 @@ p {
   letter-spacing: 0.8px;
   font-weight: 500;
   display: none;
+  animation-name: ainmation;
+  animation-duration: 0.3s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+  animation-timing-function: ease-out;
 }
 .parente {
   margin: 5px 0;
+}
+
+@keyframes ainmation {
+  0% {
+    padding-left: 2px;
+  }
+  100% {
+    padding-right: 2px;
+  }
+}
+@keyframes ainmationDorder {
+  0% {
+    border-color: #05997e;
+  }
+  50% {
+    border-color: #0c7d69;
+  }
+  75% {
+    border-color: #016956;
+  }
+  100% {
+    border-color: #023128;
+  }
+}
+html {
+  scroll-behavior: smooth;
 }
