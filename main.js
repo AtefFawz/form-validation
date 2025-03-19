@@ -8,6 +8,7 @@ inputs.forEach(function (inp) {
   });
 });
 //==========
+
 let message = document.getElementById("message");
 message.addEventListener("click", function (e) {
   if (message.contains(e.target)) {

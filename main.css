@@ -89,9 +89,11 @@ label {
 /* Start Message */
 #message {
   height: 150px;
-  padding: 0px 5px;
+  padding: 5px;
   width: 98%;
   outline: none;
+  border-radius: 9px;
+  margin: 8px 0 0;
 }
 
 /* Span */
