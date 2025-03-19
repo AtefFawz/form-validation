@@ -7,6 +7,15 @@ inputs.forEach(function (inp) {
     this.classList.add("active");
   });
 });
+//==========
+let message = document.getElementById("message");
+message.addEventListener("click", function (e) {
+  if (message.contains(e.target)) {
+    message.classList.add("active");
+  } else {
+    message.classList.remove("active");
+  }
+});
 // Cheek Box
 document.addEventListener("DOMContentLoaded", function () {
   let cheek = document.querySelectorAll(".cheek");
