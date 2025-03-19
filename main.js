@@ -41,29 +41,37 @@ document.querySelector("form").addEventListener("submit", function (e) {
   let first1 = first.nextElementSibling;
   if (first.value === "") {
     first1.style.display = "block";
+    first.style.borderColor = "red";
     e.preventDefault();
   } else {
     first1.style.display = "none";
+    first.style.borderColor = "#aaa";
   }
+  //=========
   let last = document.getElementById("last");
   if (last.value === "") {
     last.nextElementSibling.style.display = "block";
+    last.style.borderColor = "red";
     e.preventDefault();
   } else {
     last.nextElementSibling.style.display = "none";
+    last.style.borderColor = "#aaa";
   }
   // EmailAdrasses Valedtion
   let email = document.getElementById("emi");
   if (email.value === "") {
     e.preventDefault();
     email.nextElementSibling.style.display = "block";
+    email.style.borderColor = "red";
   }
   let validtion = email.value;
   let patern = /(\w+)+@(\w+)+\.+\w+/gi;
   if (patern.test(validtion) !== true) {
     email.nextElementSibling.style.display = "block";
+
     e.preventDefault();
   } else {
+    email.style.borderColor = "#aaa";
     email.nextElementSibling.style.display = "none";
   }
   //=========================== Cheeck Box
@@ -81,9 +89,11 @@ document.querySelector("form").addEventListener("submit", function (e) {
   let message = document.querySelector("#message");
   if (message.value === "") {
     message.nextElementSibling.style.display = "block";
+    message.style.borderColor = "red";
     e.preventDefault();
   } else {
     message.nextElementSibling.style.display = "none";
+    message.style.borderColor = "#aaa";
   }
   //================== Check Box =========
   let Chek = document.querySelector("#Chek");
